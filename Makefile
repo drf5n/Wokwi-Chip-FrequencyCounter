@@ -6,15 +6,15 @@
 # modified for mac homebrew environment
 # Followed https://00f.net/2019/04/07/compiling-to-webassembly-with-llvm-and-clang/ on Mac
 #  
-#SYSROOT = /tmp/wasi-libc
-SYSROOT = /opt/wasi-libc
+SYSROOT = /tmp/wasi-libc
+#SYSROOT = /opt/wasi-libc
 
 
 SOURCES = src/main.c
 TARGET  = dist/chip.wasm
 
 .PHONY: all
-all: $(TARGET) dist/chip.json
+all: $(TARGET) dist/chip.json dist/chip.zip
 
 .PHONY: clean
 clean:
@@ -28,6 +28,13 @@ $(TARGET): dist $(SOURCES) src/wokwi-api.h
 
 dist/chip.json: dist chip.json
 	  cp chip.json dist
+
+# targets for producing a chip.zip file for manual release creation on Github:
+dist/chip:
+		mkdir -p dist/chip
+
+dist/chip.zip: dist/chip.json dist/chip
+	cd dist && cp chip.json chip.wasm chip/ && zip chip.zip chip/* 
 
 .PHONY: test
 test:
