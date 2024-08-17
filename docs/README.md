@@ -18,17 +18,17 @@ To use this chip in your project, include it as a dependency in your `diagram.js
 
 ```json
   "dependencies": {
-    "chip-freqCounter": "github:drf5n/Wokwi-freqCounter-chip@1.0.0"
+    "chip-FrequencyCounter": "github:drf5n/Wokwi-FrequencyCounter-chip@1.0.0"
   }
 ```
 
-Then, add the chip to your circuit by adding a `chip-freqCounter` item to the `parts` section of diagram.json:
+Then, add the chip to your circuit by adding a `chip-FrequencyCounter` item to the `parts` section of diagram.json:
 
 ```json
   "parts": {
     ...,
-    { "type": "chip-freqCounter", "id": "freqCounter1" }
+    { "type": "chip-FrequencyCounter", "id": "FrequencyCounter1" }
   },
 ```
 
-For a complete example, see [the freqCounter chip test project](https://wokwi.com/projects/406335146945275905).
+For a complete example, see [the FrequencyCounter chip test project](https://wokwi.com/projects/406335146945275905).

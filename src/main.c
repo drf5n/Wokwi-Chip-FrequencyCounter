@@ -1,4 +1,4 @@
-// freqCount.chip.c -- frequency counter and inverter
+// FeequencyCounter.chip.c -- frequency counter and inverter
 // Copied from https://wokwi.com/projects/327458636089524820
 // For information and examples see:
 // https://docs.wokwi.com/chips-api/getting-started
