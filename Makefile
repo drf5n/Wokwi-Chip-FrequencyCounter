@@ -4,10 +4,10 @@
 # Copied from https://github.com/wokwi/inverter-chip/blob/main/Makefile 
 # per https://discord.com/channels/787627282663211009/954892209486966825/1274468132618244128
 # modified for mac homebrew environment
-# SYSROOT = /opt/wasi-libc
 # Followed https://00f.net/2019/04/07/compiling-to-webassembly-with-llvm-and-clang/ on Mac
 #  
-SYSROOT = /tmp/wasi-libc
+#SYSROOT = /tmp/wasi-libc
+SYSROOT = /opt/wasi-libc
 
 
 SOURCES = src/main.c
