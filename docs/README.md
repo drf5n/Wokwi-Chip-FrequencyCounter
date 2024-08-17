@@ -18,7 +18,7 @@ To use this chip in your project, include it as a dependency in your `diagram.js
 
 ```json
   "dependencies": {
-    "chip-FrequencyCounter": "github:drf5n/Wokwi-FrequencyCounter-chip@1.0.0"
+    "chip-FrequencyCounter": "github:drf5n/Wokwi-FrequencyCounter-chip@v1.0.1"
   }
 ```
 
