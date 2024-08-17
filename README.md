@@ -19,8 +19,6 @@ Then, add the chip to your circuit by adding a `chip-scope` item to the `parts` 
     {
       "type": "chip-FrequencyCounter",
       "id": "FrequencyCounter1",
-      "top": -37.38,
-      "left": -61.6,
       "attrs": { }
     },
 ```
