@@ -1,0 +1,12 @@
+{
+  "name": "FreqCounter",
+  "author": "Uri Shaked / David Forrest",
+  "pins": [
+    "OUT",
+    "IN",
+    "",
+    "ENA",
+    "GND",
+    "VCC"
+  ]
+}
