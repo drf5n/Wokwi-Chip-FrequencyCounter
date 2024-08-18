@@ -8,7 +8,7 @@ Frequency Counter
 To use this chip in your project, include it as a dependency in your `diagram.json` file:
 
 ```json
-"dependencies": { "chip-FrequencyCounter": "github:drf5n/Wokwi-Chip-FrequencyCounter@v1.0.5" }
+"dependencies": { "chip-freq": "github:drf5n/Wokwi-Chip-FrequencyCounter@1.0.6" }
 ```
 
 Then, add the chip to your circuit by adding a `chip-scope` item to the `parts` section of `diagram.json`:
@@ -17,8 +17,8 @@ Then, add the chip to your circuit by adding a `chip-scope` item to the `parts` 
   "parts": {
     ...,
     {
-      "type": "chip-FrequencyCounter",
-      "id": "FrequencyCounter1",
+      "type": "chip-freq",
+      "id": "freq1",
       "attrs": { }
     },
 ```
