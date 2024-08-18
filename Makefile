@@ -1,6 +1,8 @@
 # SPDX-FileCopyrightText: © 2022 Uri Shaked <uri@wokwi.com>
 # SPDX-License-Identifier: MIT
 
+# Makefile for non-automated non CI creation of chip.zip file for github
+
 # Copied from https://github.com/wokwi/inverter-chip/blob/main/Makefile 
 # per https://discord.com/channels/787627282663211009/954892209486966825/1274468132618244128
 # modified for mac homebrew environment

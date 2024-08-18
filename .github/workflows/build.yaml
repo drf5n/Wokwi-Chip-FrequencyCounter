@@ -1,4 +1,5 @@
 name: Build Chip
+# Continuous integration per https://docs.wokwi.com/wokwi-ci/github-actions
 
 on:
   push:
