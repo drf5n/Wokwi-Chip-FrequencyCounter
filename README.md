@@ -27,7 +27,34 @@ The actual source code for the chip lives in [src/main.c](https://github.com/drf
 
 ## Examples
 
-[https://wokwi.com/projects/406335146945275905](https://wokwi.com/projects/406335146945275905) Test FrequencyCounter chip.
+* [Wokwi Uno using Github repository](https://wokwi.com/projects/406518140295703553)  https://github.com/drf6n/Wokwi-Chip-FrequencyCounter
+* [Wokwi Uni using tabbed files](https://wokwi.com/projects/406335146945275905)
+
+### Wokwi files for monitor in a PWM pin:
+```
+void setup() {
+  pinMode(3, OUTPUT);
+  analogWrite(3, 128);
+}
+
+void loop() {
+}
+
+```
+
+```
+{
+  "version": 1,
+  "author": "drf5n",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "chip-freq", "id": "freq1", "top": -75.78, "left": 273.6, "attrs": {} }
+  ],
+  "connections": [ [ "freq1:IN", "uno:3", "green", [ "h0" ] ] ],
+  "dependencies": { "chip-freq": "github:drf5n/Wokwi-Chip-FrequencyCounter@1.0.6" }
+}
+```
 
 ## License
 
