@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "author": "David Forrest",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -57, "left": -0.6, "attrs": {} },
+    { "type": "chip-freq", "id": "freq1", "top": -123.78, "left": 302.4, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -168.25,
+      "left": 199.91,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -168.98,
+      "left": 256.43,
+      "attrs": { "color": "green" }
+    },
+    { "type": "wokwi-slide-switch", "id": "sw1", "top": -178, "left": 425.5, "attrs": {} },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot1",
+      "top": -14,
+      "left": 224.8,
+      "rotate": 270,
+      "attrs": { "travelLength": "30" }
+    }
+  ],
+  "connections": [
+    [ "uno:GND.1", "led1:C", "black", [ "v0" ] ],
+    [ "uno:GND.1", "led2:C", "black", [ "v-55.43", "h154.13" ] ],
+    [ "led1:A", "uno:9", "green", [ "v49.45", "h-52.11" ] ],
+    [ "uno:A0", "pot1:SIG", "green", [ "v38.3", "h128.6" ] ],
+    [ "pot1:VCC", "uno:VIN", "red", [ "v9.6", "h-76.8" ] ],
+    [ "uno:9", "freq1:IN", "green", [ "v-28.8", "h135.2", "v-28.8" ] ],
+    [ "freq1:OUT", "led2:A", "green", [ "h0" ] ],
+    [ "uno:GND.3", "pot1:GND", "black", [ "v47.9", "h234.4", "v-259.2", "h-86.4" ] ],
+    [ "freq1:GND", "pot1:GND", "black", [ "h30.61", "v28.8", "h-115.2" ] ],
+    [ "sw1:3", "freq1:ENA", "green", [ "v9.6", "h0.2", "v38.4" ] ],
+    [ "pot1:VCC", "freq1:VCC", "red", [ "v9.6", "h115.2", "v-268.8" ] ],
+    [ "freq1:GND", "sw1:2", "black", [ "h30.61", "v-9.6" ] ]
+  ],
+  "dependencies": { "chip-freq": "github:drf5n/Wokwi-Chip-FrequencyCounter@1.0.6" }
+}

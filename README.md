@@ -27,8 +27,8 @@ The actual source code for the chip lives in [src/main.c](https://github.com/drf
 
 ## Examples
 
-* [Wokwi Uno using Github repository](https://wokwi.com/projects/406518140295703553)
-* [Wokwi Uni using tabbed files](https://wokwi.com/projects/406335146945275905)
+* [Wokwi Uno with Frequency Counter using this repository](https://wokwi.com/projects/406518140295703553)
+* [Wokwi Uno with Frequency Counter using tabbed files](https://wokwi.com/projects/406335146945275905)
 
 ### Wokwi files for monitor in a PWM pin:
 ```
