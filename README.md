@@ -8,7 +8,7 @@ Frequency Counter
 To use this chip in your project, include it as a dependency in your `diagram.json` file:
 
 ```json
-"dependencies": { "chip-freq": "github:drf5n/Wokwi-Chip-FrequencyCounter@1.0.6" }
+"dependencies": { "chip-freq": "github:drf5n/Wokwi-Chip-FrequencyCounter@1.0.7" }
 ```
 
 Then, add the chip to your circuit by adding a `chip-scope` item to the `parts` section of `diagram.json`:
@@ -27,8 +27,9 @@ The actual source code for the chip lives in [src/main.c](https://github.com/drf
 
 ## Examples
 
-* [Wokwi Uno with Frequency Counter using this repository](https://wokwi.com/projects/406518140295703553)
-* [Wokwi Uno with Frequency Counter using tabbed files](https://wokwi.com/projects/406335146945275905)
+* [Wokwi Uno with Frequency Counter using this repository](https://wokwi.com/projects/406518140295703553) -- with counter and meter
+* [Wokwi Uno with Frequency Counter using tabbed files](https://wokwi.com/projects/406335146945275905) -- with counter and meter
+* [Wokwi Uno with Scope, PWM and Counter](https://wokwi.com/projects/390819301187622913)
 
 ### Wokwi files for monitor in a PWM pin:
 ```
@@ -52,9 +53,13 @@ void loop() {
     { "type": "chip-freq", "id": "freq1", "top": -75.78, "left": 273.6, "attrs": {} }
   ],
   "connections": [ [ "freq1:IN", "uno:3", "green", [ "h0" ] ] ],
-  "dependencies": { "chip-freq": "github:drf5n/Wokwi-Chip-FrequencyCounter@1.0.6" }
+  "dependencies": { "chip-freq": "github:drf5n/Wokwi-Chip-FrequencyCounter@1.0.8" }
 }
 ```
+
+## Versions
+* github:drf5n/Wokwi-Chip-FrequencyCounter@1.0.7 -- Working release of Counter
+* github:drf5n/Wokwi-Chip-FrequencyCounter@1.0.8 -- Add COUNT/!METER pin and frequency meter code for low frequency accuracy
 
 ## License
 
